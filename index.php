@@ -79,7 +79,7 @@ $hotels = [
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php for ($i = 0; $i < sizeof($hotels); $i++) { ?>
                             <th scope="col"><?= $hotels[$i]['name'] ?></th>
                         <?php } ?>
                     </tr>
@@ -87,13 +87,13 @@ $hotels = [
                 <tbody>
                     <tr class="">
                         <th scope="row">Description</th>
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php for ($i = 0; $i < sizeof($hotels); $i++) { ?>
                             <td scope="row"><?= $hotels[$i]['description'] ?></td>
                         <?php } ?>
                     </tr>
                     <tr class="">
                         <th scope="row">Parking</th>
-                        <?php for ($i = 0; $i < 5; $i++) {
+                        <?php for ($i = 0; $i < sizeof($hotels); $i++) {
                             if ($hotels[$i]['parking'] == true) { ?>
                                 <td scope="row">Yes</td>
                             <?php } else { ?>
@@ -103,13 +103,13 @@ $hotels = [
                     </tr>
                     <tr class="">
                         <th scope="row">Vote</th>
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php for ($i = 0; $i < sizeof($hotels); $i++) { ?>
                             <td scope="row"><?= $hotels[$i]['vote'] ?></td>
                         <?php } ?>
                     </tr>
                     <tr class="">
                         <th scope="row">Distance to center</th>
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php for ($i = 0; $i < sizeof($hotels); $i++) { ?>
                             <td scope="row"><?= $hotels[$i]['distance_to_center'] ?></td>
                         <?php } ?>
                     </tr>
